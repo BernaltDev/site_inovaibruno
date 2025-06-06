@@ -1,0 +1,106 @@
+/* Base styles for InovAIBruno */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #0D0D0D;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+header {
+  background: #0A1128;
+  color: #FFFFFF;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #22D1EE;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0A1128, #0D0D0D);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: #0A1128;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02) translateY(-2px);
+}
+
+footer {
+  background: #0A1128;
+  color: #FFFFFF;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-columns {
+  display: grid;
+  gap: 20px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .footer-columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer-columns h4 {
+  margin-top: 0;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns li {
+  margin-bottom: 8px;
+}
+
+.button {
+  background: #22D1EE;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #00FFE7;
+}
